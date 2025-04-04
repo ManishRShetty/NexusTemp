@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Nexus Main</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap');
+
+    body {
+      margin: 0;
+      padding: 0;
+      background: radial-gradient(circle, #0a0a0a, #000000);
+      color: #00ffe7;
+      font-family: 'Orbitron', sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    .logo {
+      width: 150px;
+      height: auto;
+      margin-bottom: 30px;
+      filter: drop-shadow(0 0 20px #00ffe7);
+      animation: fadeIn 1.5s ease-out;
+    }
+
+    .card {
+      border: 2px solid #00ffe7;
+      padding: 30px 50px;
+      border-radius: 15px;
+      box-shadow: 0 0 30px #00ffe7;
+      background: rgba(0, 255, 231, 0.05);
+      animation: fadeIn 2s ease-out;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 1.2rem;
+      color: #bff;
+      margin-top: 5px;
+      margin-bottom: 30px;
+    }
+
+    .back-button {
+      padding: 12px 30px;
+      font-size: 1rem;
+      color: #000;
+      background-color: #00ffe7;
+      border: none;
+      border-radius: 40px;
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+
+    .back-button:hover {
+      background-color: #00bfa6;
+      transform: scale(1.05);
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+  <img src="logo.png" alt="Nexus Logo" class="logo" />
+  <div class="card">
+    <h1>Welcome to the Nexus Main Page 🚀</h1>
+    <p>Explore AI | Build the Future | Power of Innovation</p>
+    <button class="back-button" onclick="window.location.href='index.html'">Open Nexus!</button>
+  </div>
+</body>
+</html>
